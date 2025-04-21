@@ -58,14 +58,13 @@ Includes:
 
 ---
 
-## 🌐 Live Report Access
+## 🔗 Interactive Report
 
-📎 **Embedded Dashboard View**:  
-<div align="center">
+Click the image below to explore the full interactive Power BI report:
 
-<iframe title="Forggith" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiZjMxMDM5YWMtZGFjZi00NmNjLTk2ODEtNzkyZmEzYjNlNDZjIiwidCI6IjczZmFkNzQwLTYwNzgtNDk5My04NTZhLTM0YzNjOThhYjlmZSJ9" frameborder="0" allowFullScreen="true"></iframe>
+[![Forggith Power BI Report](./Snapshots/report-thumbnail.png)](https://app.powerbi.com/view?r=eyJrIjoiZjMxMDM5YWMtZGFjZi00NmNjLTk2ODEtNzkyZmEzYjNlNDZjIiwidCI6IjczZmFkNzQwLTYwNzgtNDk5My04NTZhLTM0YzNjOThhYjlmZSJ9)
 
-</div>
+> *(Best viewed on desktop for full functionality.)*
 
 📄 [Download PDF version of report](./Report%20PDF%20Export/Forggith_Report.pdf)  
 📊 [Excel file with DAX measures](./Measures.xlsx)
