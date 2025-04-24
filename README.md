@@ -2,7 +2,7 @@
 
 ## 👋 Introduction
 
-Hi, I'm Olamide Quzeem, an aspiring Data Analyst passionate about transforming raw data into actionable business insights. This Power BI project was developed to solve a real-world challenge for a fictional pharmaceutical company — Forggith Pharmaceuticals — and showcases my skills across the full data analytics pipeline: data cleaning, modeling, analysis, and visualization.
+Hi, I'm Olamide Quzeem, a Data Analyst passionate about transforming raw data into actionable business insights. This Power BI project was developed to solve a real-world challenge for a fictional pharmaceutical company — Forggith Pharmaceuticals — and showcases my skills across the full data analytics pipeline: data cleaning, modeling, analysis, and visualization.
 
 Whether you're a recruiter, hiring manager, or fellow data enthusiast, I invite you to explore this project. I built it with business impact, storytelling, and usability in mind.
 
@@ -125,8 +125,7 @@ This project used synthetic yet realistic sales and marketing data, structured a
 
 > Click below to explore the full report (best on desktop):
 
-[🔗 View Forggith Power BI Report](https://app.powerbi.com/view?r=eyJrIjoiZjMxMDM5YWMtZGFjZi00NmNjLTk2ODEtNzkyZmEzYjNlNDZjIiwidCI6IjczZmFkNzQwLTYwNzgtNDk5My04NTZhLTM0YzNjOThhYjlmZSJ9)
-
+[![Forggith Power BI Report](./Snapshots/report-thumbnail.png)](https://app.powerbi.com/view?r=eyJrIjoiZjMxMDM5YWMtZGFjZi00NmNjLTk2ODEtNzkyZmEzYjNlNDZjIiwidCI6IjczZmFkNzQwLTYwNzgtNDk5My04NTZhLTM0YzNjOThhYjlmZSJ9)
 📄 [Download PDF version](./Report%20PDF%20Export/Forggith_Report.pdf)  
 📊 [Download DAX Measures File](./Measures.xlsx)
 
