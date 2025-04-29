@@ -1,165 +1,99 @@
 # 📊 Forggith BI Performance Tracker
 
-## 👋 Introduction
 
-Hi, I'm Olamide Quzeem, a Data Analyst passionate about transforming raw data into actionable business insights. This Power BI project was developed to solve a real-world challenge for a fictional pharmaceutical company — Forggith Pharmaceuticals — and showcases my skills across the full data analytics pipeline: data cleaning, modeling, analysis, and visualization.
+# Project Background
+Forggith, a German-based pharmaceutical company operating on a B2B model, manufactures drugs distributed to consumers through their network of distributors. The company possesses a substantial dataset encompassing sales, targets, product type, distribution channel, and distributor information spanning four years.
 
-Whether you're a recruiter, hiring manager, or fellow data enthusiast, I invite you to explore this project. I built it with business impact, storytelling, and usability in mind.
-
----
-
-## 🧠 Business Context
-
-**Forggith Pharmaceuticals** is a Germany-based pharmaceutical manufacturing company that sells products through a distribution network. They don’t sell directly to retailers but maintain sales visibility via their Sales and Marketing teams.
-
-To support smarter decision-making, Forggith requested a **2-page Power BI dashboard** tailored for:
-- **Sales Executives**: for strategic KPIs
-- **Team Leads**: for performance management
-- **Sales Reps**: for personal tracking
-
-The ask was clear — visualize both **Sales** and **Marketing performance**, allowing slicing by team, product, time, and more.
+This project undertakes a thorough analysis and synthesis of their data to develop Power BI reports, as per their requirements, aimed at informing their strategic, tactical, and operational decision-making.
 
 ---
 
-## 🎯 Objectives
+<details>
+<summary>📌 Click to view Forggith’s reporting requirements</summary>
 
-- Monitor revenue and volume performance (monthly, YTD).
-- Compare actuals to targets.
-- Provide insights at team, product, rep, and channel levels.
-- Build an intuitive dashboard for dynamic slicing and stakeholder navigation.
-
----
-
-## 📂 About the Dataset
-
-This project used synthetic yet realistic sales and marketing data, structured around:
-
-- Revenue & Volume transactions
-- Monthly Targets per Rep & Team
-- Channel & Product hierarchies
-- Team/Rep assignments over time
-
----
-
-## 🧹 Data Cleaning & Transformation
-
-- Performed in **Power Query**
-- Removed inconsistencies and duplicates
-- Normalized column types and formats
-- Built a robust **date table** for time intelligence
-- Filtered for relevant timeframes and active reps
-
----
-
-## 🧱 Data Modeling
-
-- Created a **star schema** with fact and dimension tables
-- Modeled:
-  - Sales
-  - Volume
-  - Targets
-- Built relationships with:
-  - Teams
-  - Reps
-  - Products
-  - Channels
-- Enabled **time intelligence** with a custom date table
-
----
-
-## 📊 Report Pages
-
-### 1. **Sales Performance Overview**
+**Sales Performance Overview** (Sliced by Year, Month, Quarter, Team)
 - Total Revenue
-- Revenue vs Target (YTD & Monthly)
-- MoM Revenue % Change
-- Revenue by Product Class, Region, Channel
-- Drill-downs by Team and Rep
+- YTD Total Revenue
+- YTD Total Revenue (Previous Year)
+- Same Period Last Year (SPLY) Revenue
+- Total Target
+- YTD Total Target
+- Revenue Performance YTD vs Target YTD
+- Month-on-Month Revenue Change
+- Revenue by Location
+- Revenue by Channel
+- Revenue by Product Class
 
-### 2. **Marketing Performance**
-- Revenue & Volume vs Target
-- Contribution by Product Class
-- Rep-level analysis
-- Channel-specific breakdown
+**Marketing Performance** (Sliced by Year, Quarter, Month, Product Category, Team)
+- Revenue vs Target
+- Volume vs Target
+- Actual Revenue by Sales Rep
+- Target Revenue Achievement by Sales Rep
+- Actual Volume by Sales Rep
+- Target Volume Achievement by Sales Rep
+- Sales Team Revenue Achievement
+- Product Revenue and Volume Achievement
 
----
-
-## 📌 Key KPIs Tracked
-
-- Total Revenue
-- YTD Revenue vs Target
-- % Target Achieved
-- Month-over-Month Revenue Change
-- Volume & Revenue per Team, Rep, Channel
-
----
-
-## 🔎 Key Insights
-
-- Product Class 3 showed consistent underperformance, suggesting need for a strategic review.
-- Certain reps and teams consistently over-delivered, indicating scalable best practices.
-- The Open Market and Pharmacy channels drove the bulk of revenue.
+</details>
 
 ---
 
-## ✅ Recommendations
+Insights and recommendations are provided in the following key areas:
 
-- Incentivize top reps and scale their practices across teams.
-- Refocus marketing spend away from consistently underperforming product classes.
-- Empower team leads with rep-level dashboards to monitor performance weekly.
+- **Sales Rep Performance:** Evaluate the performance of individual sales reps, focusing on achieved revenue, volume, and progress toward targets.
 
----
+- **Product Class Contribution:** Analyze revenue and volume contributions from different product classes to identify key sales drivers and areas for strategic focus.
 
-## 🛠 Tools & Skills Demonstrated
+- **Team-Level Revenue Distribution:** Understand how revenue is distributed across different sales teams.
 
-- **Power BI Desktop & Power BI Service**
-- **Power Query** for data transformation
-- **DAX** for calculated measures and KPIs
-- Multi-table Data Modeling
-- UX/UI best practices: slicers, reference labels, card visuals
-- Dashboard embedding and troubleshooting Pro license rendering issues
+- **Revenue vs. Target Trends Over Time:** Track trends comparing actual revenue to targets over time, identifying performance patterns and seasonal variations for strategy adjustments.
 
 ---
+## Data Structure and Modeling
 
-## 🔗 Interactive Report
+From the datasets provided, the **Sales** fact table contains **213,598 rows** spanning four years of transactions (2022–2025). A **multi-fact table modeling approach** was used due to differences in granularity between the Sales and Target datasets.
+Below is a snapshot of the data model created:
 
-> Click below to explore the full report (best on desktop):
+![Data Model](insert-image-link-here) <!-- Replace with actual image path or URL -->
+<details>
+<summary>Why a multi-fact table approach was used</summary>
 
-[![Forggith Power BI Report](./Snapshots/report-thumbnail.png)](https://app.powerbi.com/view?r=eyJrIjoiZjMxMDM5YWMtZGFjZi00NmNjLTk2ODEtNzkyZmEzYjNlNDZjIiwidCI6IjczZmFkNzQwLTYwNzgtNDk5My04NTZhLTM0YzNjOThhYjlmZSJ9)
-📄 [Download PDF version](./Report%20PDF%20Export/Forggith_Report.pdf)  
-📊 [Download DAX Measures File](./Measures.xlsx)
+The Sales data is at the transaction level, while the Target data is aggregated by month, product, and sales rep. Directly linking these two would create granularity conflicts and incorrect aggregations. By modeling them as separate fact tables connected to shared dimensions, we maintain data integrity while enabling accurate comparisons and metrics.
+</details>
 
----
+Before building the model, several data transformation steps were carried out using **Power Query**, including:
 
-## 🧠 What I Learned
+- Cleaning and standardizing field entries  
+- Merging the 2023–2025 sales data with the 2022 records  
+- Unpivoting the yearly columns in the Target dataset to match the Sales structure  
 
-- Building multi-fact table models in Power BI
-- Applying advanced DAX (YTD, MoM, % Target)
-- Designing for usability and performance
-- Troubleshooting Pro license limitations in embedded dashboards
-- Using visual storytelling for business alignment
+These steps ensured consistency and compatibility across all datasets used in the reporting model.
 
----
+<details>
+<summary>View Power Query M scripts used for data cleaning</summary>
 
-## 🪜 What's Next
+The cleaning process involved:
+- Removing nulls and inconsistent entries  
+- Normalizing column headers  
+- Converting data types appropriately  
+- Merging and appending sales tables across years  
+- Unpivoting the target values across years into a single ‘Year’ column
 
-- Add forecasting based on historical trends.
-- Introduce row-level security for individualized views.
-- Automate underperformance alerts via Power BI Service.
+You can find the complete M script in the Power BI file's `Transform Data` section.
+</details>
 
----
+<details>
+<summary>Download the Excel file containing DAX measures</summary>
 
-## 🙌 Final Note
+The Excel file contains all DAX measures used in the report, categorized by use case (Sales KPIs, Target Metrics, Team-level Rollups, etc.). This file can serve as a reference or be imported into another model for reuse.
 
-This project reflects how I approach analytics — combining technical fluency with business understanding and a drive to tell stories that stakeholders care about.
+📎 [DAX Measures File](#) *(Replace this link with actual file link)*
+</details>
 
-If you're hiring for an **Entry-Level or Junior Data Analyst** who can hit the ground running with Power BI, DAX, and a strategic mindset, I’d love to hear from you.
+The final data model includes two fact tables — **Sales** and **Target** — connected to shared dimension tables:
 
----
-
-## 📬 Contact
-
-- **LinkedIn**: [linkedin.com/in/yourprofile](#)
-- **Email**: [youremail@example.com](#)
-
-Thanks for reading 🙌
+- `DimProduct`  
+- `DimEmployee`  
+- `DimLocation`  
+- `DimChannel`  
+- A generated `Calendar` table for time intelligence
