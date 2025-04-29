@@ -54,7 +54,7 @@ Insights and recommendations are provided in the following key areas:
 From the datasets provided, the **Sales** fact table contains **213,598 rows** spanning four years of transactions (2022–2025). A **multi-fact table modeling approach** was used due to differences in granularity between the Sales and Target datasets.
 Below is a snapshot of the data model created:
 
-![Data Model](Snapshots/Data_model_snapshot.png) <!-- Replace with actual image path or URL -->
+![Data Model](./Snapshots/Data_model_snapshot.png)<!-- Replace with actual image path or URL -->
 <details>
 <summary>Why a multi-fact table approach was used</summary>
 
