@@ -40,11 +40,11 @@ This project undertakes a thorough analysis and synthesis of their data to devel
 
 Insights and recommendations are provided in the following key areas:
 
-- **Sales Rep Performance:** Evaluate the performance of individual sales reps, focusing on achieved revenue, volume, and progress toward targets.
+- **Sales Rep and Team Performance:** Evaluate the performance of individual sales reps and teams, focusing on achieved revenue, volume, and progress toward targets.
 
 - **Product Class Contribution:** Analyze revenue and volume contributions from different product classes to identify key sales drivers and areas for strategic focus.
 
-- **Team-Level Revenue Distribution:** Understand how revenue is distributed across different sales teams.
+- **Distributor and Channels Contribution:** Analyze revenue and volume contributions by distributors and their respective channels across the years.
 
 - **Revenue vs. Target Trends Over Time:** Track trends comparing actual revenue to targets over time, identifying performance patterns and seasonal variations for strategy adjustments.
 
@@ -97,3 +97,80 @@ The final data model includes two fact tables — **Sales** and **Target** — c
 - `DimLocation`  
 - `DimChannel`  
 - A generated `Calendar` table for time intelligence
+
+## 📊 Executive Summary
+
+### Overview of Findings
+
+Forggith Pharmaceuticals experienced steady revenue growth from 2022 through 2024, peaking at **$2.93 billion**, before encountering a slight contraction in 2025, with revenue declining to **$2.66 billion**. Despite this dip, each year recorded revenue above target, although **target achievement fell from 141.8% in 2022 to 109.7% in 2025**, signaling a deceleration in growth momentum.
+
+During the same period, **sales volume declined year-over-year**, from **56,486 units in 2022 to 51,193 units in 2025**, alongside a drop in the number of active distributors from **14 to just 7**. This significant shrinking of the distribution footprint negatively impacted sales volume and revenue by 2025.
+
+Below is the **Sales Performance Overview** page from the Power BI dashboard. Additional report pages with further breakdowns are included throughout this report.
+
+[![Sales Overview Dashboard](./snapshots/report_snapshot.png)](https://app.powerbi.com/view?r=eyJrIjoiZjMxMDM5YWMtZGFjZi00NmNjLTk2ODEtNzkyZmEzYjNlNDZjIiwidCI6IjczZmFkNzQwLTYwNzgtNDk5My04NTZhLTM0YzNjOThhYjlmZSJ9&pageName=115c6479416b24895d0a)
+
+**Click the image above to interact with the live Sales Overview Dashboard.**
+
+### Sales Rep and Team Performance
+
+
+### Product Class Performance
+
+Forggith Pharmaceuticals experienced steady revenue growth from 2022 through 2024, peaking at **$2.93 billion**, before encountering a slight contraction in 2025, with revenue declining to **$2.66 billion**. Despite this dip, each year recorded revenue above target, although **target achievement fell from 141.8% in 2022 to 109.7% in 2025**, signaling a deceleration in growth momentum.
+
+During the same period, **sales volume declined year-over-year**, from **56,486 units in 2022 to 51,193 units in 2025**, alongside a drop in the number of active distributors from **14 to just 7**. This significant shrinking of the distribution footprint negatively impacted sales volume and revenue by 2025.
+
+Below is the **Sales Performance Overview** page from the Power BI dashboard. Additional report pages with further breakdowns are included throughout this report.
+
+[![Sales Overview Dashboard](./snapshots/report_snapshot.png)](https://app.powerbi.com/view?r=eyJrIjoiZjMxMDM5YWMtZGFjZi00NmNjLTk2ODEtNzkyZmEzYjNlNDZjIiwidCI6IjczZmFkNzQwLTYwNzgtNDk5My04NTZhLTM0YzNjOThhYjlmZSJ9&pageName=115c6479416b24895d0a)
+
+
+
+
+
+
+### Sales Team and Manager
+
+
+
+Forggith Pharmaceuticals experienced steady revenue growth from 2022 through 2024, peaking at **$2.93 billion**, before encountering a slight contraction in 2025, with revenue declining to **$2.66 billion**. Despite this dip, each year recorded revenue above target, although **target achievement fell from 141.8% in 2022 to 109.7% in 2025**, signaling a deceleration in growth momentum.
+
+During the same period, **sales volume declined year-over-year**, from **56,486 units in 2022 to 51,193 units in 2025**, alongside a drop in the number of active distributors from **14 to just 7**. This significant shrinking of the distribution footprint negatively impacted sales volume and revenue by 2025.
+
+Below is the **Sales Performance Overview** page from the Power BI dashboard. Additional report pages with further breakdowns are included throughout this report.
+
+[![Sales Overview Dashboard](./snapshots/report_snapshot.png)](https://app.powerbi.com/view?r=eyJrIjoiZjMxMDM5YWMtZGFjZi00NmNjLTk2ODEtNzkyZmEzYjNlNDZjIiwidCI6IjczZmFkNzQwLTYwNzgtNDk5My04NTZhLTM0YzNjOThhYjlmZSJ9&pageName=115c6479416b24895d0a)
+
+
+
+
+
+
+
+### Distributors and Channels of Contributions
+
+
+Forggith Pharmaceuticals experienced steady revenue growth from 2022 through 2024, peaking at **$2.93 billion**, before encountering a slight contraction in 2025, with revenue declining to **$2.66 billion**. Despite this dip, each year recorded revenue above target, although **target achievement fell from 141.8% in 2022 to 109.7% in 2025**, signaling a deceleration in growth momentum.
+
+During the same period, **sales volume declined year-over-year**, from **56,486 units in 2022 to 51,193 units in 2025**, alongside a drop in the number of active distributors from **14 to just 7**. This significant shrinking of the distribution footprint negatively impacted sales volume and revenue by 2025.
+
+Below is the **Sales Performance Overview** page from the Power BI dashboard. Additional report pages with further breakdowns are included throughout this report.
+
+[![Sales Overview Dashboard](./snapshots/report_snapshot.png)](https://app.powerbi.com/view?r=eyJrIjoiZjMxMDM5YWMtZGFjZi00NmNjLTk2ODEtNzkyZmEzYjNlNDZjIiwidCI6IjczZmFkNzQwLTYwNzgtNDk5My04NTZhLTM0YzNjOThhYjlmZSJ9&pageName=115c6479416b24895d0a)
+
+
+
+
+
+### Revenue vs. Target Trends Over Time
+
+Forggith Pharmaceuticals experienced steady revenue growth from 2022 through 2024, peaking at **$2.93 billion**, before encountering a slight contraction in 2025, with revenue declining to **$2.66 billion**. Despite this dip, each year recorded revenue above target, although **target achievement fell from 141.8% in 2022 to 109.7% in 2025**, signaling a deceleration in growth momentum.
+
+During the same period, **sales volume declined year-over-year**, from **56,486 units in 2022 to 51,193 units in 2025**, alongside a drop in the number of active distributors from **14 to just 7**. This significant shrinking of the distribution footprint negatively impacted sales volume and revenue by 2025.
+
+Below is the **Sales Performance Overview** page from the Power BI dashboard. Additional report pages with further breakdowns are included throughout this report.
+
+[![Sales Overview Dashboard](./snapshots/report_snapshot.png)](https://app.powerbi.com/view?r=eyJrIjoiZjMxMDM5YWMtZGFjZi00NmNjLTk2ODEtNzkyZmEzYjNlNDZjIiwidCI6IjczZmFkNzQwLTYwNzgtNDk5My04NTZhLTM0YzNjOThhYjlmZSJ9&pageName=115c6479416b24895d0a)
+
+
