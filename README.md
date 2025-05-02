@@ -1,7 +1,7 @@
 # 📊 Forggith BI Performance Tracker
 
 
-# Project Background
+## Project Background
 Forggith, a German-based pharmaceutical company operating on a B2B model, manufactures drugs distributed to consumers through their network of distributors. The company possesses a substantial dataset encompassing sales, targets, product type, distribution channel, and distributor information spanning four years.
 
 This project undertakes a thorough analysis and synthesis of their data to develop Power BI reports, as per their requirements, aimed at informing their strategic, tactical, and operational decision-making.
@@ -115,7 +115,6 @@ Below is the **Sales Performance Overview** page from the Power BI dashboard. Ad
 **Click the image above to interact with the live Sales Overview Dashboard.**
 
 
-
 ### Distributors
 
 - **Distributor Count Decline:** Forggith Pharmaceuticals had a total of 16 distributors between 2022 and 2025. The number of active distributors declined each year, from 14 in 2022 to just 7 by 2025.
@@ -124,7 +123,7 @@ Below is the **Sales Performance Overview** page from the Power BI dashboard. Ad
 
 - **Emerging Risk:** If the trend of distributor loss continues, and any of the top contributors exit, a significant revenue decline is likely.
 
-![Revenue by Distributors](./Snapshots/Rev_by_distributors_updated.png)
+![Revenue by Distributors](./Snapshots/distributors_updated.png)
 
 
 ### Product Class Performance
@@ -177,5 +176,13 @@ During the same period, **sales volume declined year-over-year**, from **56,486 
 Below is the **Sales Performance Overview** page from the Power BI dashboard. Additional report pages with further breakdowns are included throughout this report.
 
 [![Sales Overview Dashboard](./snapshots/report_snapshot.png)](https://app.powerbi.com/view?r=eyJrIjoiZjMxMDM5YWMtZGFjZi00NmNjLTk2ODEtNzkyZmEzYjNlNDZjIiwidCI6IjczZmFkNzQwLTYwNzgtNDk5My04NTZhLTM0YzNjOThhYjlmZSJ9&pageName=115c6479416b24895d0a)
+
+
+## Recommendations
+
+- Reward Loyalty Programme for Distributors
+- Additional rep to each team to get back old distributors
+- An inceptive for reps where they get something if number of distributors they have increased from prior year and revenue to be achieved across all product class
+-  
 
 
