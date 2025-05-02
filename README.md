@@ -40,11 +40,13 @@ This project undertakes a thorough analysis and synthesis of their data to devel
 
 Insights and recommendations are provided in the following key areas:
 
-- **Sales Rep and Team Performance:** Evaluate the performance of individual sales reps and teams, focusing on achieved revenue, volume, and progress toward targets.
+- **Distributor Contribution:** Analyze revenue and volume contributions by distributors and their respective channels across the years.
 
-- **Product Class Contribution:** Analyze revenue and volume contributions from different product classes to identify key sales drivers and areas for strategic focus.
+- **Product Performance:** Analyze revenue and volume contributions from different product classes to identify key sales drivers and areas for strategic focus.
 
-- **Distributor and Channels Contribution:** Analyze revenue and volume contributions by distributors and their respective channels across the years.
+  
+- **Sales Team Performance:** Evaluate the performance of the sales teams, focusing on achieved revenue, volume, and progress toward targets.
+
 
 - **Revenue vs. Target Trends Over Time:** Track trends comparing actual revenue to targets over time, identifying performance patterns and seasonal variations for strategy adjustments.
 
@@ -102,9 +104,9 @@ The final data model includes two fact tables — **Sales** and **Target** — c
 
 ### Overview of Findings
 
-Forggith Pharmaceuticals experienced steady revenue growth from 2022 through 2024, peaking at **$2.93 billion**, before encountering a slight contraction in 2025, with revenue declining to **$2.66 billion**. Despite this dip, each year recorded revenue above target, although **target achievement fell from 141.8% in 2022 to 109.7% in 2025**, signaling a deceleration in growth momentum.
+Forggith Pharmaceuticals saw consistent revenue growth from 2022 to 2024, peaking at **$2.93 billion**, before falling slightly to **$2.66 billion** in 2025, though revenue exceeded targets each year. <br>
 
-During the same period, **sales volume declined year-over-year**, from **56,486 units in 2022 to 51,193 units in 2025**, alongside a drop in the number of active distributors from **14 to just 7**. This significant shrinking of the distribution footprint negatively impacted sales volume and revenue by 2025.
+Sales volume and distributor count declined steadily, with active distributors halving from **14** in 2022 to **7** by 2025, yet **90%** of total revenue was driven by just six distributors. This concentrated revenue reliance, paired with shrinking distribution, signals potential risk to sustained growth.
 
 Below is the **Sales Performance Overview** page from the Power BI dashboard. Additional report pages with further breakdowns are included throughout this report.
 
@@ -112,7 +114,32 @@ Below is the **Sales Performance Overview** page from the Power BI dashboard. Ad
 
 **Click the image above to interact with the live Sales Overview Dashboard.**
 
-### Sales Rep and Team Performance
+
+
+### Distributors
+
+- **Distributor Count Decline:** Forggith Pharmaceuticals had a total of 16 distributors between 2022 and 2025. The number of active distributors declined each year, from 14 in 2022 to just 7 by 2025.
+
+- **Revenue Resilience:** Despite the drop in distributors, overall revenue remained relatively unaffected. This is because the top 6 distributors alone accounted for 90% of the total revenue.
+
+- **Emerging Risk:** If the trend of distributor loss continues, and any of the top contributors exit, a significant revenue decline is likely.
+
+![Revenue by Distributors](./Snapshots/Rev_by_distributors_updated.png)
+
+
+### Product Class Performance
+
+- Among the **6 product classes**, Analgesics, Antiseptics, and Mood Stabilizers are the top revenue drivers, contributing **20.0%, 18.9%, and 17.4%** respectively, together accounting for over **56%** of total revenue.
+
+- Analgesics hit a revenue peak of **$644M** in 2024 but dipped below their historical average in 2025, aligning with the overall revenue slowdown.
+
+- Analgesics also led in quantity sold (5.3M units), followed closely by Antiseptics (5.2M) and Mood Stabilizers (4.9M), despite fewer total orders.
+
+- Antimalarials sold more units (4M) than Antipyretics (3.8M), yet generated the least revenue overall, pointing to lower price points.
+
+![Product Performance](./Snapshots/Product_performance.png)
+
+### Sales Team Performance
 
 Forggith Pharmaceuticals experienced steady revenue growth from 2022 through 2024, peaking at **$2.93 billion**, before encountering a slight contraction in 2025, with revenue declining to **$2.66 billion**. Despite this dip, each year recorded revenue above target, although **target achievement fell from 141.8% in 2022 to 109.7% in 2025**, signaling a deceleration in growth momentum.
 
@@ -122,17 +149,6 @@ Below is the **Sales Performance Overview** page from the Power BI dashboard. Ad
 
 [![Marketing Perfomance Dashboard](./Snapshots/rep_performance.png)](https://app.powerbi.com/view?r=eyJrIjoiZjMxMDM5YWMtZGFjZi00NmNjLTk2ODEtNzkyZmEzYjNlNDZjIiwidCI6IjczZmFkNzQwLTYwNzgtNDk5My04NTZhLTM0YzNjOThhYjlmZSJ9&pageName=115c6479416b24895d0a)
 
-
-
-### Product Class Performance
-
-Forggith Pharmaceuticals experienced steady revenue growth from 2022 through 2024, peaking at **$2.93 billion**, before encountering a slight contraction in 2025, with revenue declining to **$2.66 billion**. Despite this dip, each year recorded revenue above target, although **target achievement fell from 141.8% in 2022 to 109.7% in 2025**, signaling a deceleration in growth momentum.
-
-During the same period, **sales volume declined year-over-year**, from **56,486 units in 2022 to 51,193 units in 2025**, alongside a drop in the number of active distributors from **14 to just 7**. This significant shrinking of the distribution footprint negatively impacted sales volume and revenue by 2025.
-
-Below is the **Sales Performance Overview** page from the Power BI dashboard. Additional report pages with further breakdowns are included throughout this report.
-
-[![Sales Overview Dashboard](./snapshots/report_snapshot.png)](https://app.powerbi.com/view?r=eyJrIjoiZjMxMDM5YWMtZGFjZi00NmNjLTk2ODEtNzkyZmEzYjNlNDZjIiwidCI6IjczZmFkNzQwLTYwNzgtNDk5My04NTZhLTM0YzNjOThhYjlmZSJ9&pageName=115c6479416b24895d0a)
 
 
 
@@ -150,26 +166,6 @@ During the same period, **sales volume declined year-over-year**, from **56,486 
 Below is the **Sales Performance Overview** page from the Power BI dashboard. Additional report pages with further breakdowns are included throughout this report.
 
 [![Sales Overview Dashboard](./snapshots/report_snapshot.png)](https://app.powerbi.com/view?r=eyJrIjoiZjMxMDM5YWMtZGFjZi00NmNjLTk2ODEtNzkyZmEzYjNlNDZjIiwidCI6IjczZmFkNzQwLTYwNzgtNDk5My04NTZhLTM0YzNjOThhYjlmZSJ9&pageName=115c6479416b24895d0a)
-
-
-
-
-
-
-
-### Distributors and Channels of Contributions
-
-
-Forggith Pharmaceuticals experienced steady revenue growth from 2022 through 2024, peaking at **$2.93 billion**, before encountering a slight contraction in 2025, with revenue declining to **$2.66 billion**. Despite this dip, each year recorded revenue above target, although **target achievement fell from 141.8% in 2022 to 109.7% in 2025**, signaling a deceleration in growth momentum.
-
-During the same period, **sales volume declined year-over-year**, from **56,486 units in 2022 to 51,193 units in 2025**, alongside a drop in the number of active distributors from **14 to just 7**. This significant shrinking of the distribution footprint negatively impacted sales volume and revenue by 2025.
-
-Below is the **Sales Performance Overview** page from the Power BI dashboard. Additional report pages with further breakdowns are included throughout this report.
-
-[![Sales Overview Dashboard](./snapshots/report_snapshot.png)](https://app.powerbi.com/view?r=eyJrIjoiZjMxMDM5YWMtZGFjZi00NmNjLTk2ODEtNzkyZmEzYjNlNDZjIiwidCI6IjczZmFkNzQwLTYwNzgtNDk5My04NTZhLTM0YzNjOThhYjlmZSJ9&pageName=115c6479416b24895d0a)
-
-
-
 
 
 ### Revenue vs. Target Trends Over Time
