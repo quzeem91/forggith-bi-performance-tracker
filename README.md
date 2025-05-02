@@ -133,12 +133,12 @@ Below is the **Sales Performance Overview** page from the Power BI dashboard. Ad
 
 ### Sales Team Performance
 
-- Delta team pulled the highest cumulative revenue at $3.4B, contributing 30% of total revenue — partly due to having **four** members, while other teams had **three**.
+- Delta team pulled the highest cumulative revenue at $3.4B, contributing 30% of total revenue, partly due to having **four** members, while other teams had **three**.
   However, the revenue dip in 2025 was most evident in the Delta team, as they achieved only 93.1% of their target, with just one member meeting their individual goal.
 
 - Charlie team, led by Manager **Alisha Cordwell**, followed with $2.7B (24% contribution) and stood out as the most efficient, achieving **144%** of their 2025 revenue target despite the broader market dip.
 
-- Bravo team maintained consistent target achievements across the years but experienced a gradual decline, from **147%** in 2022 down to **110%** in 2025 showing a shrinking margins.
+- Bravo team maintained consistent target achievements across the years but experienced a gradual decline, from **147%** in 2022 down to **110%** in 2025, showing shrinking margins.
 
 - Alpha team mirrored this pattern, dropping from 151% in 2022 to 103% in 2025, consistently meeting targets, but with declining year-over-year performance.
 
@@ -147,6 +147,8 @@ Below is the **Sales Performance Overview** page from the Power BI dashboard. Ad
 
 
 Below is a Marketing Performance Dashboard developed for Forggith, enabling dynamic tracking of Revenue vs Target across years, product classes, and sales teams.
+
+
 [![Marketing Perfomance Dashboard](./Snapshots/rep_performance.png)](https://app.powerbi.com/view?r=eyJrIjoiZjMxMDM5YWMtZGFjZi00NmNjLTk2ODEtNzkyZmEzYjNlNDZjIiwidCI6IjczZmFkNzQwLTYwNzgtNDk5My04NTZhLTM0YzNjOThhYjlmZSJ9&pageName=115c6479416b24895d0a)
 
 
