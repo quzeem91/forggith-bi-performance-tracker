@@ -47,9 +47,6 @@ Insights and recommendations are provided in the following key areas:
   
 - **Sales Team Performance:** Evaluate the performance of the sales teams, focusing on achieved revenue, volume, and progress toward targets.
 
-
-- **Revenue vs. Target Trends Over Time:** Track trends comparing actual revenue to targets over time, identifying performance patterns and seasonal variations for strategy adjustments.
-
 ---
 ## Data Structure and Modeling
 
@@ -71,9 +68,6 @@ Before building the model, several data transformation steps were carried out us
 
 These steps ensured consistency and compatibility across all datasets used in the reporting model.
 
-<details>
-<summary>View Power Query M scripts used for data cleaning</summary>
-
 The cleaning process involved:
 - Removing nulls and inconsistent entries  
 - Normalizing column headers  
@@ -81,8 +75,7 @@ The cleaning process involved:
 - Merging and appending sales tables across years  
 - Unpivoting the target values across years into a single ‘Year’ column
 
-You can find the complete M script in the Power BI file's `Transform Data` section.
-</details>
+
 
 <details>
 <summary>Download the Excel file containing DAX measures</summary>
@@ -140,42 +133,22 @@ Below is the **Sales Performance Overview** page from the Power BI dashboard. Ad
 
 ### Sales Team Performance
 
-Forggith Pharmaceuticals experienced steady revenue growth from 2022 through 2024, peaking at **$2.93 billion**, before encountering a slight contraction in 2025, with revenue declining to **$2.66 billion**. Despite this dip, each year recorded revenue above target, although **target achievement fell from 141.8% in 2022 to 109.7% in 2025**, signaling a deceleration in growth momentum.
+- Delta team pulled the highest cumulative revenue at $3.4B, contributing 30% of total revenue — partly due to having **four** members, while other teams had **three**.
+  However, the revenue dip in 2025 was most evident in the Delta team, as they achieved only 93.1% of their target, with just one member meeting their individual goal.
 
-During the same period, **sales volume declined year-over-year**, from **56,486 units in 2022 to 51,193 units in 2025**, alongside a drop in the number of active distributors from **14 to just 7**. This significant shrinking of the distribution footprint negatively impacted sales volume and revenue by 2025.
+- Charlie team, led by Manager **Alisha Cordwell**, followed with $2.7B (24% contribution) and stood out as the most efficient, achieving **144%** of their 2025 revenue target despite the broader market dip.
 
-Below is the **Sales Performance Overview** page from the Power BI dashboard. Additional report pages with further breakdowns are included throughout this report.
+- Bravo team maintained consistent target achievements across the years but experienced a gradual decline, from **147%** in 2022 down to **110%** in 2025 showing a shrinking margins.
 
+- Alpha team mirrored this pattern, dropping from 151% in 2022 to 103% in 2025, consistently meeting targets, but with declining year-over-year performance.
+
+![Team Performance](./Snapshots/Rev_by_team.png)
+
+
+
+Below is a Marketing Performance Dashboard developed for Forggith, enabling dynamic tracking of Revenue vs Target across years, product classes, and sales teams.
 [![Marketing Perfomance Dashboard](./Snapshots/rep_performance.png)](https://app.powerbi.com/view?r=eyJrIjoiZjMxMDM5YWMtZGFjZi00NmNjLTk2ODEtNzkyZmEzYjNlNDZjIiwidCI6IjczZmFkNzQwLTYwNzgtNDk5My04NTZhLTM0YzNjOThhYjlmZSJ9&pageName=115c6479416b24895d0a)
 
-
-
-
-
-
-
-### Sales Team and Manager
-
-
-
-Forggith Pharmaceuticals experienced steady revenue growth from 2022 through 2024, peaking at **$2.93 billion**, before encountering a slight contraction in 2025, with revenue declining to **$2.66 billion**. Despite this dip, each year recorded revenue above target, although **target achievement fell from 141.8% in 2022 to 109.7% in 2025**, signaling a deceleration in growth momentum.
-
-During the same period, **sales volume declined year-over-year**, from **56,486 units in 2022 to 51,193 units in 2025**, alongside a drop in the number of active distributors from **14 to just 7**. This significant shrinking of the distribution footprint negatively impacted sales volume and revenue by 2025.
-
-Below is the **Sales Performance Overview** page from the Power BI dashboard. Additional report pages with further breakdowns are included throughout this report.
-
-[![Sales Overview Dashboard](./snapshots/report_snapshot.png)](https://app.powerbi.com/view?r=eyJrIjoiZjMxMDM5YWMtZGFjZi00NmNjLTk2ODEtNzkyZmEzYjNlNDZjIiwidCI6IjczZmFkNzQwLTYwNzgtNDk5My04NTZhLTM0YzNjOThhYjlmZSJ9&pageName=115c6479416b24895d0a)
-
-
-### Revenue vs. Target Trends Over Time
-
-Forggith Pharmaceuticals experienced steady revenue growth from 2022 through 2024, peaking at **$2.93 billion**, before encountering a slight contraction in 2025, with revenue declining to **$2.66 billion**. Despite this dip, each year recorded revenue above target, although **target achievement fell from 141.8% in 2022 to 109.7% in 2025**, signaling a deceleration in growth momentum.
-
-During the same period, **sales volume declined year-over-year**, from **56,486 units in 2022 to 51,193 units in 2025**, alongside a drop in the number of active distributors from **14 to just 7**. This significant shrinking of the distribution footprint negatively impacted sales volume and revenue by 2025.
-
-Below is the **Sales Performance Overview** page from the Power BI dashboard. Additional report pages with further breakdowns are included throughout this report.
-
-[![Sales Overview Dashboard](./snapshots/report_snapshot.png)](https://app.powerbi.com/view?r=eyJrIjoiZjMxMDM5YWMtZGFjZi00NmNjLTk2ODEtNzkyZmEzYjNlNDZjIiwidCI6IjczZmFkNzQwLTYwNzgtNDk5My04NTZhLTM0YzNjOThhYjlmZSJ9&pageName=115c6479416b24895d0a)
 
 
 ## Recommendations
