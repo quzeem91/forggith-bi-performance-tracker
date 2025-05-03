@@ -93,6 +93,8 @@ The final data model includes two fact tables — **Sales** and **Target** — c
 - `DimChannel`  
 - A generated `Calendar` table for time intelligence
 
+---
+
 ## 📊 Executive Summary
 
 ### Overview of Findings
@@ -138,7 +140,7 @@ Below is the **Sales Performance Overview** page from the Power BI dashboard. Ad
 
 - Charlie team, led by Manager **Alisha Cordwell**, followed with $2.7B (24% contribution) and stood out as the most efficient, achieving **144%** of their 2025 revenue target despite the broader market dip.
 
-- Bravo team maintained consistent target achievements across the years but experienced a gradual decline, from **147%** in 2022 down to **110%** in 2025, showing shrinking margins.
+- Bravo team maintained consistent target achievements across the years but experienced a gradual decline, from **147%** in 2022 down to **110%** in 2025, which showed shrinking margins.
 
 - Alpha team mirrored this pattern, dropping from 151% in 2022 to 103% in 2025, consistently meeting targets, but with declining year-over-year performance.
 
@@ -151,13 +153,67 @@ Below is a Marketing Performance Dashboard developed for Forggith, enabling dyna
 
 [![Marketing Perfomance Dashboard](./Snapshots/rep_performance.png)](https://app.powerbi.com/view?r=eyJrIjoiZjMxMDM5YWMtZGFjZi00NmNjLTk2ODEtNzkyZmEzYjNlNDZjIiwidCI6IjczZmFkNzQwLTYwNzgtNDk5My04NTZhLTM0YzNjOThhYjlmZSJ9&pageName=115c6479416b24895d0a)
 
+---
+
+## 📌Recommendations for Forggith
+
+1. **Launch a Distributor Loyalty Programme**
+
+Forggith should establish a comprehensive reward and recognition system to motivate and celebrate distributor performance. Contributions will be tracked across several key areas, including revenue generated, product class performance, order volume, and geographic coverage. At the end of each fiscal year (or at the start of a new one), Forggith will host a prestigious **Distributor Loyalty Awards Night**, inviting all active distributors to celebrate shared successes. Awards and gifts will be presented across various categories, including:
+
+ - **Product Class Champion**: For top revenue contribution in specific product categories.
+ - **Order Volume Leader**: For the highest number of purchase orders fulfilled.
+ - **Market Expansion Pioneer**:  For distributors who successfully penetrate new or underserved markets.
+ - **Top New Distributor**: Recognizing new joiners who show strong early performance.
+
+This initiative will:
+
+ - Help strengthen loyalty and recognition for high-performing partners.
+
+ - Reignite engagement from dormant or underperforming distributors.
+
+ - Drive targeted growth in lagging product classes.
+
+ - Provide a strategic platform to introduce new products and share upcoming business goals.
+
+2. **Expand the Sales Force Strategically**
+   
+   Each sales team should be assigned an additional Sales Representative, supported by a structured onboarding process, and clearly defined KPIs focused on:
+   
+ - Acquiring new distributors in both existing and untapped territories
+
+ - Reactivating lapsed distributors who have stopped engaging in recent years
+  
+This strategic expansion will help mitigate the yearly decline of distributors and expand market penetration.
+
+3. **Introduce Targeted Incentive For Reps and Managers**
+
+  Forggith should implement an incentive structure that rewards:
+
+ - Individual sales reps for exceeding targets
+
+ - Sales teams for collaborative success
+
+ - Team managers for strategic leadership
+
+ - Product-specific performance to drive focus on underperforming categories.
+This will aid Forggith to drive engagement, accountability, and performance across tiers.
+
+4. **Facilitate Knowledge Sharing Across Teams**
+   
+   Given Charlie team’s outstanding efficiency, under the leadership of **Alisha Cordwell**, Forggith should host periodic inter-team strategy seminars. These should:
+
+ - Promote sharing of successful tactics and approaches
+
+ - Encourage a collaborative “Team Forggith” culture
+
+ - Help underperforming teams adopt proven strategies to improve outcomes
 
 
-## Recommendations
 
-- Reward Loyalty Programme for Distributors
-- Additional rep to each team to get back old distributors
-- An inceptive for reps where they get something if number of distributors they have increased from prior year and revenue to be achieved across all product class
--  
+## Assumptions and Caveats
+
+
+
 
 
