@@ -78,7 +78,7 @@ These steps ensured consistency and compatibility across all datasets used in th
 
 Below is the Excel file containing all DAX measures used in the report, with clear descriptions. This file serves as documentation and can be incorporated into other models for reuse.
 
-📎 [DAX Measures File](./forggith_measures.xlsx)
+📎 [DAX Measures File](./Forggith_report_metric_and_measures.xlsx)
 </details>
 
 The final data model includes two fact tables — **Sales** and **Target** — connected to shared dimension tables:
