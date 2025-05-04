@@ -194,7 +194,7 @@ Below is a Marketing Performance Dashboard developed for Forggith, enabling dyna
 
 1. The U.S. dollar ($) was assumed as the currency for this report, as none was explicitly stated.
 
-2. Row-Level Security (RLS) was initially implemented with three roles: Sales Rep, Manager, and Executive. This allowed sales reps to view only their own performance, and managers to view their respective teams. However, publishing the report with these roles disabled the embed report link due to tenant restrictions. As a result, RLS was removed in this version. To access the PBIX file with RLS, click [here].
+2. Row-Level Security (RLS) was initially implemented with three roles: Sales Rep, Manager, and Executive. This allowed sales reps to view only their own performance, and managers to view their respective teams. However, publishing the report with these roles disabled the embed report link due to tenant restrictions. As a result, RLS was removed in this version.To access the PBIX file with RLS, click [here](./Forggith%20RLS%20Enforced.pbix).
 
 3. Based on Forggith’s reporting requirements, the content was structured into two main sections: Sales Performance Overview and Marketing Performance Overview. Each section was kept concise, resulting in a two-page report.
 
