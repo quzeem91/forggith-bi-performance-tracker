@@ -66,12 +66,7 @@ Before building the model, several data transformation steps were carried out us
 - Merging the 2023–2025 sales data with the 2022 records  
 - Unpivoting the yearly columns in the Target dataset to match the Sales structure  
 
-These steps ensured consistency and compatibility across all datasets used in the reporting model. The cleaning process involved:
-- Removing nulls and inconsistent entries  
-- Normalizing column headers  
-- Converting data types appropriately  
-- Merging and appending sales tables across years  
-- Unpivoting the target values across years into a single ‘Year’ column
+These steps ensured consistency and compatibility across all datasets used in the reporting model.
 
 <details>
 <summary>Download the Excel file containing DAX measures</summary>
@@ -81,7 +76,7 @@ Below is the Excel file containing all DAX measures used in the report, with cle
 📎 [DAX Measures File](./Forggith_report_metric_and_measures.xlsx)
 </details>
 
-The final data model includes two fact tables — **Sales** and **Target** — connected to shared dimension tables:
+The final data model includes two fact tables — **FactSales** and **Target** — connected to shared dimension tables:
 
 - `DimProduct`  
 - `DimEmployee`  
@@ -95,13 +90,13 @@ The final data model includes two fact tables — **Sales** and **Target** — c
 
 ### Overview of Findings
 
-Forggith Pharmaceuticals saw consistent revenue growth from 2022 to 2024, peaking at **$2.93 billion**, before falling slightly to **$2.66 billion** in 2025, though revenue exceeded targets each year. <br>
+Forggith Pharmaceuticals saw consistent revenue growth from 2022 to 2024, peaking at **$2.99 billion**, before falling slightly to **$2.78 billion** in 2025, though revenue exceeded targets each year. <br>
 
 Sales volume and distributor count declined steadily, with active distributors halving from **14** in 2022 to **7** by 2025, yet **90%** of total revenue was driven by just six distributors. This concentrated revenue reliance, paired with shrinking distribution, signals potential risk to sustained growth.
 
 Below is the **Sales Performance Overview** page from the Power BI dashboard. Additional report pages with further breakdowns are included throughout this report.
 
-[![Sales Overview Dashboard](./Snapshots/Sales_overview_updated.png)](https://app.powerbi.com/view?r=eyJrIjoiZjMxMDM5YWMtZGFjZi00NmNjLTk2ODEtNzkyZmEzYjNlNDZjIiwidCI6IjczZmFkNzQwLTYwNzgtNDk5My04NTZhLTM0YzNjOThhYjlmZSJ9&pageName=115c6479416b24895d0a)
+[![Sales Overview Dashboard](./Snapshots/sales_overview.png)](https://app.powerbi.com/view?r=eyJrIjoiZjMxMDM5YWMtZGFjZi00NmNjLTk2ODEtNzkyZmEzYjNlNDZjIiwidCI6IjczZmFkNzQwLTYwNzgtNDk5My04NTZhLTM0YzNjOThhYjlmZSJ9&pageName=115c6479416b24895d0a)
 
 **Click the image above to interact with the live Sales Overview Dashboard.**
 
@@ -119,26 +114,26 @@ Below is the **Sales Performance Overview** page from the Power BI dashboard. Ad
 
 ### Product Class Performance 💊
 
-- Among the **6 product classes**, Analgesics, Antiseptics, and Mood Stabilizers are the top revenue drivers, contributing **20.0%, 18.9%, and 17.4%** respectively, together accounting for over **56%** of total revenue.
+- Among the **6 product classes**, Analgesics, Antiseptics, and Mood Stabilizers are the top revenue drivers, contributing **20.25%, 18.87%, and 17.34%** respectively, together accounting for over **56%** of total revenue.
 
-- Analgesics hit a revenue peak of **$644M** in 2024 but dipped below their historical average in 2025, aligning with the overall revenue slowdown.
+- Analgesics hit a revenue peak of **$662M** in 2024 but dipped below their historical average in 2025, aligning with the overall revenue slowdown.
 
-- Analgesics also led in quantity sold (5.3M units), followed closely by Antiseptics (5.2M) and Mood Stabilizers (4.9M), despite fewer total orders.
+- Analgesics also led in quantity sold (5.4M units), followed closely by Antiseptics (5.3M) and Mood Stabilizers (5M), despite fewer total orders.
 
-- Antimalarials sold more units (4M) than Antipyretics (3.8M), yet generated the least revenue overall, pointing to lower price points.
+- Antimalarials sold more units (4.1M) than Antipyretics (4M) and Antibiotics (3.9M), yet generated the least revenue overall, pointing to lower price points.
 
 ![Product Performance](./Snapshots/Product_performance.png)
 
 ### Sales Team Performance 🎯
 
 - Delta team pulled the highest cumulative revenue at $3.4B, contributing 30% of total revenue, partly due to having **four** members, while other teams had **three**.
-  However, the revenue dip in 2025 was most evident in the Delta team, as they achieved only 93.1% of their target, with just one member meeting their individual goal.
+  However, the revenue dip in 2025 was most evident in the Delta team, as they achieved only 96.80% of their target, with 2 of 4 members hitting their set individual targets.
 
-- Charlie team, led by Manager **Alisha Cordwell**, followed with $2.7B (24% contribution) and stood out as the most efficient, achieving **144%** of their 2025 revenue target despite the broader market dip.
+- Charlie team, led by Manager **Alisha Cordwell**, followed with $2.73B (24% contribution) and stood out as the most efficient, achieving **150%** of their 2025 revenue target despite the broader market dip.
 
-- Bravo team maintained consistent target achievements across the years but experienced a gradual decline, from **147%** in 2022 down to **110%** in 2025, which showed shrinking margins.
+- Bravo team maintained consistent target achievements across the years but experienced a gradual decline, from **149.7%** in 2022 down to **114%** in 2025, which showed shrinking margins.
 
-- Alpha team mirrored this pattern, dropping from 151% in 2022 to 103% in 2025, consistently meeting targets, but with declining year-over-year performance.
+- Alpha team mirrored this pattern, dropping from 153% in 2022 to 109% in 2025, consistently meeting targets, but with declining year-over-year performance.
 
 ![Team Performance](./Snapshots/Rev_by_team.png)
 
@@ -147,7 +142,7 @@ Below is the **Sales Performance Overview** page from the Power BI dashboard. Ad
 Below is a Marketing Performance Dashboard developed for Forggith, enabling dynamic tracking of Revenue vs Target across years, product classes, and sales teams.
 
 
-[![Marketing Perfomance Dashboard](./Snapshots/rep_performance.png)](https://app.powerbi.com/view?r=eyJrIjoiZjMxMDM5YWMtZGFjZi00NmNjLTk2ODEtNzkyZmEzYjNlNDZjIiwidCI6IjczZmFkNzQwLTYwNzgtNDk5My04NTZhLTM0YzNjOThhYjlmZSJ9&pageName=115c6479416b24895d0a)
+[![Marketing Perfomance Dashboard](./Snapshots/Marketing_perfromance.png)](https://app.powerbi.com/view?r=eyJrIjoiZjMxMDM5YWMtZGFjZi00NmNjLTk2ODEtNzkyZmEzYjNlNDZjIiwidCI6IjczZmFkNzQwLTYwNzgtNDk5My04NTZhLTM0YzNjOThhYjlmZSJ9&pageName=115c6479416b24895d0a)
 
 ---
 
@@ -192,10 +187,13 @@ Below is a Marketing Performance Dashboard developed for Forggith, enabling dyna
 
 ### Assumptions and Caveats 📝
 
-1. The U.S. dollar ($) was assumed as the currency for this report, as none was explicitly stated.
+1. The report content consists of two pages, Sales Performance Overview and Marketing Performance Overview, structured according to Forggith’s reporting requirements. Each page was designed to be concise and focused.
 
-2. Row-Level Security (RLS) was initially implemented with three roles: Sales Rep, Manager, and Executive. This allowed sales reps to view only their own performance, and managers to view their respective teams. However, publishing the report with these roles disabled the embed report link due to tenant restrictions. As a result, RLS was removed in this version.To access the PBIX file with RLS, click [here](./Forggith%20RLS%20Enforced.pbix).
+2. Row-Level Security (RLS) was initially implemented with three roles: Sales Rep, Manager, and Executive. This will allow sales reps to only view their own performance, and managers to view their respective teams. However, publishing the report with these roles disabled the embed report link due to tenant restrictions. As a result, RLS was removed in this version. To access the PBIX file with RLS, click [here](./Forggith%20RLS%20Enforced.pbix).
+   
+3. A total of 2,613 rows had negative quantity values, ranging from -1 to -7,200. Since these rows included key identifiers such as distributor name, customer name, location, and sales ID, they were retained, and the quantities were converted to positive values.
+   
+4. The U.S. dollar ($) was assumed as the currency for this report, as none was explicitly stated.
 
-3. Based on Forggith’s reporting requirements, the content was structured into two main sections: Sales Performance Overview and Marketing Performance Overview. Each section was kept concise, resulting in a two-page report.
 
 
